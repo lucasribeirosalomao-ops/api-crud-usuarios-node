@@ -2,23 +2,37 @@
 
 API REST desenvolvida com Node.js e Express para gerenciamento de usuários.
 
+---
+
 ## 📌 Funcionalidades
 
-- Listar usuários
-- Criar usuários
-- Atualizar usuários
-- Deletar usuários
-- Validação de dados (nome e e-mail obrigatórios)
-- Verificação de e-mail duplicado
+- ✅ Listar usuários
+- ✅ Criar usuários
+- ✅ Atualizar usuários
+- ✅ Deletar usuários
+- ✅ Validação de dados
+- ✅ Verificação de e-mail duplicado
 
-## 🛠 Tecnologias utilizadas
+---
+
+## 🛠 Tecnologias
 
 - Node.js
 - Express
 - CORS
 
-## 📡 Rotas da API
+---
+
+## 📡 Endpoints
 
 ### 🔹 Listar usuários
-```http
 GET /usuarios
+
+### 🔹 Criar usuário
+POST /usuarios
+
+```json
+{
+  "nome": "Lucas",
+  "email": "lucas@email.com"
+}
